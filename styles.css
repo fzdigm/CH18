@@ -1,28 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
-
-*, ::after, ::before {
+*, ::before, ::after {
     box-sizing: border-box;
 }
-
 html {
-    font-size: 62.5%; /* 10px */
+    font-size: 62.5%;
 }
 
-*, div {
-    font-size: 2rem;
-    font-family: "Orbitron", serif;
-    font-weight: 400;
+body {
+    background: url("images/palms.jpg") no-repeat fixed center center;
+    background-size: cover; 
+}
+img {
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+}
+
+h1 {
     text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    font-size: 5.0rem;
+    color:brown
 }
 
-div {
-    border: 2px solid red;
+.div1 {
     display: flex;
-    height: 50%;
-    width: 33%;
-    /* height: 500px; */
-    flex-flow:row wrap;
+    flex-flow:row nowrap;
     justify-content: space-evenly;
     margin-bottom: 50px;
+}
+
+a:hover {
+    opacity: .80;
+}
+
+
+
+.div0 {
+    width: 570px;
+    border: 1px solid white;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(43, 6, 6, 0.507);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 75px;
+    text-shadow: 1px 1px 1px black;
+    text-align: left;
+}
+
+p {
+    color: white;
+    background-image: url("images/cat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.8rem;
+}
+@media (min-width:869px) and (max-width:1100px) {
+    img {
+        width: 275px;
+        height: 275px; 
+        padding:5px;  
+    }
+}
+
+
+@media (min-width:721px) and (max-width:868px) {
+    img {
+        width: 350px;
+        height: 350px;   
+    }
+    .div1 {
+        flex-flow:row wrap;
+    }
+}
+@media (min-width:581px) and (max-width:720px) {
+    img {
+        width: 280px;
+        height: 280px;   
+    }
+    .div1 {
+        flex-flow:row wrap;
+    }
+}
+
+
+
+@media (min-width:351px) and (max-width:580px) {
+    img {
+        width: 350px;
+        height: 350px; 
+    }
+    .div1 {
+        flex-flow:row wrap;
+    }
+
+    .div0 {
+        width: 100%;
+    }
+}
+
+@media (max-width:350px) {
+    img {
+        width: 100%;
+        height: 100%; 
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .div1 {
+        flex-flow:row wrap;
+    }
+    .div0 {
+        width: 100%;
+    }
 }
 
