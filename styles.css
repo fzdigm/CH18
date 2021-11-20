@@ -6,13 +6,13 @@ html {
 }
 
 body {
-    background: url("images/palms.jpg") no-repeat fixed center center;
+    background: url("images/street.jpg") no-repeat fixed center center;
     background-size: cover; 
 }
 img {
-    width: 500px;
-    height: 500px;
-    padding: 10px;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
 }
 
 h1 {
